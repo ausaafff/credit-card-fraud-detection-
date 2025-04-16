@@ -91,5 +91,16 @@ This project detects fraudulent credit card transactions using machine learning 
 
 > **Key Insight:** Random Forest post-SMOTE detects 78% of frauds with strong performance.
 
+
+# Key Learnings from Credit Card Fraud Detection Project
+
+- **Imbalanced Data**: Handled 0.17% fraud rate using SMOTE, boosting recall (e.g., Random Forest: 0.72 → 0.78) but increasing false positives.
+- **Preprocessing**: Standardized `Amount`, dropped `Time`, removed duplicates, ensuring clean data.
+- **EDA**: Visualized imbalance, correlations, and PCA clusters, guiding feature selection.
+- **Feature Selection**: Used Random Forest to select key features (e.g., `V14`, `V12`), reducing dimensionality.
+- **Modeling**: Compared Logistic Regression, Decision Tree, Random Forest; learned precision, recall, F1, AUC for evaluation.
+- **SMOTE Impact**: Improved fraud detection but reduced precision, especially for Logistic Regression.
+- **Business Insight**: Prioritized recall to minimize missed frauds, with Random Forest post-SMOTE as the best model.
+
 ---
 
